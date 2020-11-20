@@ -3,6 +3,7 @@ import axios from "axios";
 import SanctumContext from "./SanctumContext";
 
 axios.defaults.withCredentials = true;
+axios.defaults.common.headers['Accept'] = 'application/json';
 
 interface Props {
   config: {
